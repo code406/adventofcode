@@ -3,7 +3,7 @@ with open("input.txt", "r") as input:
     lines = input.read().splitlines()
 
 taken = []
-for l in lines:
+for l in lines: #Replacing B,R,F,L we get row/col in binary
     row = int(l[:-3].replace("B","1").replace("F","0"), 2)
     col = int(l[-3:].replace("R","1").replace("L","0"), 2)
     taken.append(row * 8 + col)
