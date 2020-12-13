@@ -18,7 +18,6 @@ def test_run(fix_idx, wrong, right):
             if instr == "acc": acc += value
             idx += 1
         if idx == len(lines): return acc
-        continue
 
 acc = 0
 for fix_idx, line in enumerate(og_lines):
